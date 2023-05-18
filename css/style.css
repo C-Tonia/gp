@@ -1,0 +1,161 @@
+.navbar-toggler {
+  border: 0px;
+  outline: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/hero-bg.jpg) top center/cover;
+  padding-top: 85px;
+  min-height: 100vh;
+}
+
+#hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  font-family: "Poppins", sans-serif;
+}
+#about h3,
+.counts h3 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+}
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+}
+/* to increase the pagination bullet */
+.mySwiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ffc451;
+}
+.clients .client-logo img {
+  height: 50%;
+  filter: grayscale(100%);
+  transition: all 0.8s ease-in-out;
+}
+.clients .client-logo:hover img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+.clients .client-logo {
+  height: 200px;
+}
+
+#service .icon {
+  width: 64px;
+  height: 64px;
+  background-color: #ffc451;
+}
+
+.services .icon-box {
+  border: 1px solid #ccc;
+  transition: all 0.7s ease-in-out;
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+.services h4 a {
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.services h4 a:hover {
+  color: #ffc451;
+}
+
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cta-bg.jpg) fixed center center/cover;
+  padding: 60px 0;
+}
+.counts .content .count-box span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #151515;
+  margin-left: 50px;
+}
+.testimonial {
+  background: linear-gradient(rgba(11, 41, 55, 0.9), rgba(11, 41, 55, 0.9)),
+    url(../images/cta-bg.jpg) no-repeat center center/cover;
+}
+.testimonial .carousel-indicators .active {
+  background-color: #ffc451;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.img-wrapper {
+  width: 100px;
+}
+
+.item {
+  display: none;
+}
+
+.google-map {
+  position: relative;
+  height: 75vh;
+}
+
+.google-map iframe {
+  height: 80%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+#contact .icon-box {
+  width: 50px;
+  height: 50px;
+}
+.backToTop {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (max-width: 769px) {
+  #hero h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
