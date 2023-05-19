@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -30,17 +31,17 @@
     <title>GP</title>
   </head>
   <body>
-    <header class="" id="header">
+    <header class="fixed-top" id="header">
       <nav
-        class="navbar navbar-expand-lg bg-black bg-opacity-75 fixed-top navbar-dark fw-bold justify-content-end"
+        class="navbar navbar-expand-lg bg-black bg-opacity-75 navbar-dark fw-bold justify-content-end"
         id="navbar"
       >
-        <div class="container-lg">
+        <div class="container">
           <a class="navbar-brand fs-1 me-auto text-white" href="#header"
             >GP<span class="text-primary">.</span></a
           >
           <button
-            class="btn btn-outline-primary text-white d-lg-none me-4 py-2 px-4"
+            class="btn btn-outline-primary text-white d-lg-none py-2 px-4"
             type="submit"
           >
             Get Started
@@ -121,7 +122,7 @@
       tabindex="0"
     >
       <section id="hero" class="pb-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row justify-content-center mt-4">
             <div class="text-center text-intro col-xl-6 col-lg-8">
               <h1 class="text-white fw-bolder">
@@ -136,54 +137,46 @@
           </div>
           <div class="row justify-content-center gy-4 mt-5">
             <div class="col-xl-2 col-md-4">
-              <div class="icon-box text-center border p-4 h-100">
+              <div class="icon-box text-center p-4 h-100">
                 <i class="ri-store-line fs-2 text-primary"></i>
                 <h4>
-                  <a href="" class="text-white text-decoration-none"
-                    >Lorem Ipsum</a
-                  >
+                  <a href="" class="text-decoration-none">Lorem Ipsum</a>
                 </h4>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
-              <div class="icon-box text-center border p-4 h-100">
+              <div class="icon-box text-center p-4 h-100">
                 <i class="ri-bar-chart-box-line fs-2 text-primary"></i>
                 <h4>
-                  <a href="" class="text-white text-decoration-none"
-                    >Dolor Sitema</a
-                  >
+                  <a href="" class="text-decoration-none">Dolor Sitema</a>
                 </h4>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
-              <div class="icon-box text-center border p-4 h-100">
+              <div class="icon-box text-center p-4 h-100">
                 <!-- <i class="bx bx-store-alt fs-1 text-primary"></i> -->
                 <i class="ri-calendar-todo-line text-primary fs-2"></i>
                 <h4>
-                  <a href="" class="text-white text-decoration-none"
+                  <a href="" class="text-decoration-none"
                     >Sedare Perspiciatis</a
                   >
                 </h4>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
-              <div class="icon-box text-center border p-4 h-100">
+              <div class="icon-box text-center p-4 h-100">
                 <!-- <i class="bx bx-store-alt "></i> -->
                 <i class="ri-paint-brush-line fs-2 text-primary"></i>
                 <h4>
-                  <a href="" class="text-white text-decoration-none"
-                    >Magni Dolores</a
-                  >
+                  <a href="" class="text-decoration-none">Magni Dolores</a>
                 </h4>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
-              <div class="icon-box text-center border p-4 h-100">
+              <div class="icon-box text-center p-4 h-100">
                 <i class="ri-database-2-line fs-2 text-primary"></i>
                 <h4>
-                  <a href="" class="text-white text-decoration-none"
-                    >Nemos Enimade</a
-                  >
+                  <a href="" class="text-decoration-none">Nemos Enimade</a>
                 </h4>
               </div>
             </div>
@@ -191,12 +184,20 @@
         </div>
       </section>
       <section id="about" class="py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row mt-3">
-            <div class="col-lg-6">
+            <div
+              class="col-lg-6 order-1 order-lg-2"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
               <img src="./images/about.jpg" alt="" class="img-fluid" />
             </div>
-            <div class="col-lg-6 pt-5 pt-lg-0">
+            <div
+              class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <h3>
                 Voluptatem dignissimos provident quasi corporis voluptates sit
                 assumenda.
@@ -231,8 +232,8 @@
           </div>
         </div>
       </section>
-      <section class="clients py-5">
-        <div class="container">
+      <section class="clients pb-4">
+        <div class="container" data-aos="zoom-in">
           <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -300,13 +301,21 @@
       </section>
 
       <section class="features py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="col-lg-6 mt-3">
+            <div class="col-lg-6 mt-3" data-aos="fade-right">
               <img src="./images/features.jpg" alt="" class="img-fluid" />
             </div>
-            <div class="col-lg-6 mt-3">
-              <div class="icon-box mt-4 mt-lg-0 d-flex gap-3">
+            <div
+              class="col-lg-6 mt-3"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <div
+                class="icon-box mt-4 mt-lg-0 d-flex gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
                 <i class="bx bx-receipt text-primary fs-1"></i>
                 <div class="icon-text">
                   <h4>Est labore ad</h4>
@@ -316,7 +325,11 @@
                   </p>
                 </div>
               </div>
-              <div class="icon-box mt-4 d-flex gap-3">
+              <div
+                class="icon-box mt-4 d-flex gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
                 <i class="bx bx-cube-alt text-primary fs-1"></i>
                 <div class="icon-text">
                   <h4>Harum esse qui</h4>
@@ -326,7 +339,11 @@
                   </p>
                 </div>
               </div>
-              <div class="icon-box mt-4 d-flex gap-3">
+              <div
+                class="icon-box mt-4 d-flex gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
                 <i class="bx bx-images fs-1 text-primary"></i>
                 <div class="icon-text">
                   <h4>Aut occaecati</h4>
@@ -336,7 +353,11 @@
                   </p>
                 </div>
               </div>
-              <div class="icon-box mt-4 d-flex gap-3">
+              <div
+                class="icon-box mt-4 d-flex gap-3"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
                 <i class="bx bx-shield fs-1 text-primary"></i>
                 <div class="icon-text">
                   <h4>Beatae veritatis</h4>
@@ -351,7 +372,7 @@
         </div>
       </section>
       <section id="service" class="services py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2 class="fs-6 text-uppercase">Services</h2>
             <p class="fs-2 fw-bolder text-uppercase text-black">
@@ -360,7 +381,11 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="icon-box text-center px-4 py-5">
                 <div
                   class="icon d-flex align-items-center justify-content-center mx-auto rounded my-4"
@@ -381,6 +406,8 @@
 
             <div
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             >
               <div class="icon-box text-center px-4 py-5">
                 <div
@@ -402,6 +429,8 @@
 
             <div
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             >
               <div class="icon-box text-center px-4 py-5">
                 <div
@@ -421,7 +450,11 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="icon-box text-center px-4 py-5">
                 <div
                   class="icon d-flex align-items-center justify-content-center mx-auto rounded my-4"
@@ -438,7 +471,11 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
               <div class="icon-box text-center px-4 py-5">
                 <div
                   class="icon d-flex align-items-center justify-content-center mx-auto rounded my-4"
@@ -455,7 +492,11 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               <div class="icon-box text-center px-4 py-5">
                 <div
                   class="icon d-flex align-items-center justify-content-center mx-auto rounded my-4"
@@ -475,7 +516,7 @@
         </div>
       </section>
       <section id="cta" class="cta">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div class="text-center text-white">
             <h3>Call To Action</h3>
             <p>
@@ -491,7 +532,7 @@
         </div>
       </section>
       <section class="portfolio py-5" id="portfolio">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2 class="fs-6 text-uppercase">portfolio</h2>
             <p class="fs-2 fw-bolder text-uppercase text-black">
@@ -499,11 +540,18 @@
             </p>
           </div>
           <!-- Nav tabs -->
-          <div class="my-5">
+          <div
+            class="my-5 gap-2 d-flex align-items-center justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <button class="btn btn-warning" onclick="filterSelection('all')">
               Show All
             </button>
-            <button class="btn btn-warning" onclick="filterSelection('card')">
+            <button
+              class="btn btn-warning"
+              onclick="filterSelection('portfolio-card')"
+            >
               Card
             </button>
             <button class="btn btn-warning" onclick="filterSelection('app')">
@@ -514,158 +562,181 @@
             </button>
           </div>
 
-          <div class="row gy-4" data-masonry='{"percentPosition": true }'>
+          <div
+            class="row gy-4"
+            data-masonry='{"percentPosition": true }'
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div class="col-lg-4 col-md-6 portfolio-item app">
-              <div class="portfolio-wrap">
+              <div class="portfolio-wrap position-relative">
                 <img src="./images/portfolio-1.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
                   <h4>App 1</h4>
                   <p>App</p>
                   <div class="portfolio-links">
                     <a href="#" class="" title="App 1"
-                      ><i class="bx bx-plus"></i
+                      ><i class="bx bx-plus fs-3"></i
                     ></a>
                     <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
+                      ><i class="bx bx-link fs-3"></i
                     ></a>
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item app">
-              <div class="portfolio-wrap">
+              <div class="portfolio-wrap position-relative">
                 <img src="./images/portfolio-2.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="#" class="" title="App 1"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="#" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>App 2</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="App 2"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
                 </div>
-              </div> -->
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item app">
-              <div class="portfolio-wrap">
+              <div class="portfolio-wrap position-relative">
                 <img src="./images/portfolio-3.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="#" class="" title="App 1"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="#" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div> -->
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item card">
-              <div class="portfolio-wrap">
-                <img src="./images/portfolio-4.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <div class="portfolio-links">
-              <a href="#" class="" title="App 1"
-                ><i class="bx bx-plus"></i
-              ></a>
-              <a href="#" title="More Details"
-                ><i class="bx bx-link"></i
-              ></a>
-            </div>
-          </div> -->
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item card">
-              <div class="portfolio-wrap">
-                <img src="./images/portfolio-5.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-          <h4>App 1</h4>
-          <p>App</p>
-          <div class="portfolio-links">
-            <a href="#" class="" title="App 1"
-              ><i class="bx bx-plus"></i
-            ></a>
-            <a href="#" title="More Details"
-              ><i class="bx bx-link"></i
-            ></a>
-          </div>
-        </div> -->
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item card">
-              <div class="portfolio-wrap">
-                <img src="./images/portfolio-6.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="#" class="" title="App 1"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="#" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>App 3</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="App 3"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
                 </div>
-              </div> -->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item portfolio-card">
+              <div class="portfolio-wrap position-relative">
+                <img src="./images/portfolio-4.jpg" class="img-fluid" alt="" />
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>Card 1</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="Card 1"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item portfolio-card">
+              <div class="portfolio-wrap position-relative">
+                <img src="./images/portfolio-5.jpg" class="img-fluid" alt="" />
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>Card 2</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="Card 2"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item portfolio-card">
+              <div class="portfolio-wrap position-relative">
+                <img src="./images/portfolio-6.jpg" class="img-fluid" alt="" />
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>Card 3</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="Card 3"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item web">
-              <div class="portfolio-wrap">
+              <div class="portfolio-wrap position-relative">
                 <img src="./images/portfolio-7.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="#" class="" title="App 1"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="#" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div> -->
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>Web 1</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="Web 1"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item web">
-              <div class="portfolio-wrap">
+              <div class="portfolio-wrap position-relative">
                 <img src="./images/portfolio-8.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <div class="portfolio-links">
-              <a href="#" class="" title="App 1"
-                ><i class="bx bx-plus"></i
-              ></a>
-              <a href="#" title="More Details"
-                ><i class="bx bx-link"></i
-              ></a>
-            </div>
-          </div> -->
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>Web 2</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="Web 2"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item web">
-              <div class="portfolio-wrap">
+              <div class="portfolio-wrap position-relative">
                 <img src="./images/portfolio-9.jpg" class="img-fluid" alt="" />
-                <!-- <div class="portfolio-info">
-          <h4>App 1</h4>
-          <p>App</p>
-          <div class="portfolio-links">
-            <a href="#" class="" title="App 1"
-              ><i class="bx bx-plus"></i
-            ></a>
-            <a href="#" title="More Details"
-              ><i class="bx bx-link"></i
-            ></a>
-          </div>
-        </div> -->
+                <div
+                  class="portfolio-info position-absolute p-3 d-flex justify-content-end text-white flex-column"
+                >
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="" title="Web 1"
+                      ><i class="bx bx-plus fs-3"></i
+                    ></a>
+                    <a href="#" title="More Details"
+                      ><i class="bx bx-link fs-3"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -673,15 +744,19 @@
       </section>
 
       <section id="counts" class="counts py-5">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row">
             <div
               class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+              data-aos="fade-right"
+              data-aos-delay="100"
             >
               <img src="./images/counts-img.jpg" class="img-fluid" alt="" />
             </div>
             <div
               class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch mt-5 mt-lg-0"
+              data-aos="fade-left"
+              data-aos-delay="100"
             >
               <div class="content d-flex flex-column justify-content-center">
                 <h3>Voluptatem dignissimos provident quasi</h3>
@@ -745,11 +820,13 @@
       <section
         class="testimonial vh-100 d-flex align-items-center justify-content-center"
       >
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div
             id="carouselExampleSlidesOnly"
             class="carousel slide"
             data-bs-ride="carousel"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             <div class="carousel-indicators">
               <button
@@ -889,7 +966,7 @@
         </div>
       </section>
       <section class="team py-5 bg-mySec-color" id="team">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2 class="fs-6 text-uppercase">team</h2>
             <p class="fs-2 fw-bolder text-uppercase text-black">
@@ -937,7 +1014,7 @@
         </div>
       </section>
       <section class="contact py-5" id="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2 class="fs-6 text-uppercase">Contact</h2>
             <p class="fs-2 fw-bolder text-uppercase text-black">Contact us</p>
@@ -1199,6 +1276,7 @@
       crossorigin="anonymous"
       async
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -1226,7 +1304,7 @@
           // console.log(item);
 
           if (item.classList.contains(category)) {
-            console.log(item);
+            // console.log(item);
 
             item.style.display = "block";
           } else {
@@ -1234,6 +1312,9 @@
           }
         }
       }
+
+      AOS.init();
+
       // new PureCounter();
     </script>
   </body>
