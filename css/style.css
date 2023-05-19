@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+section {
+  overflow: hidden;
+}
+
 .navbar-toggler {
   border: 0px;
   outline: none;
@@ -203,9 +207,6 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-}
-nav {
-  border: 2px red solid;
 }
 
 @media (max-width: 769px) {

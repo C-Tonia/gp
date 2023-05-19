@@ -33,7 +33,7 @@
   <body>
     <header class="fixed-top" id="header">
       <nav
-        class="navbar navbar-expand-lg bg-black bg-opacity-75 navbar-dark fw-bold justify-content-end"
+        class="navbar navbar-expand-lg bg-black bg-opacity-75 navbar-dark fw-bold"
         id="navbar"
       >
         <div class="container">
@@ -116,7 +116,7 @@
     <main
       data-bs-spy="scroll"
       data-bs-target="#navbar"
-      data-bs-root-margin="0px 0px -40%"
+      data-bs-root-margin="0px 0px -40%  "
       data-bs-smooth-scroll="true"
       class="scrollspy-example"
       tabindex="0"
@@ -234,7 +234,6 @@
       </section>
       <section class="clients pb-4">
         <div class="container" data-aos="zoom-in">
-          <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -780,7 +779,12 @@
                   <div class="col-md-6 d-md-flex align-items-md-stretch">
                     <div class="count-box">
                       <i class="bi bi-journal-richtext fs-2 text-primary"></i>
-                      <span>85</span>
+                      <span
+                        class="purecounter"
+                        data-purecounter-start="0"
+                        data-purecounter-end="85"
+                        >85</span
+                      >
                       <p>
                         <strong>Projects</strong> adipisci atque cum quia
                         aspernatur totam laudantium et quia dere tan
@@ -791,7 +795,12 @@
                   <div class="col-md-6 d-md-flex align-items-md-stretch">
                     <div class="count-box">
                       <i class="bi bi-clock fs-2 text-primary"></i>
-                      <span>35</span>
+                      <span
+                        class="purecounter"
+                        data-purecounter-start="0"
+                        data-purecounter-end="35"
+                        >35</span
+                      >
                       <p>
                         <strong>Years of experience</strong> aut commodi quaerat
                         modi aliquam nam ducimus aut voluptate non vel
@@ -802,7 +811,12 @@
                   <div class="col-md-6 d-md-flex align-items-md-stretch">
                     <div class="count-box">
                       <i class="bi bi-award fs-2 text-primary"></i>
-                      <span>20</span>
+                      <span
+                        class="purecounter"
+                        data-purecounter-start="0"
+                        data-purecounter-end="20"
+                        >20</span
+                      >
                       <p>
                         <strong>Awards</strong> rerum asperiores dolor alias quo
                         reprehenderit eum et nemo pad der
@@ -965,7 +979,7 @@
           </div>
         </div>
       </section>
-      <section class="team py-5 bg-mySec-color" id="team">
+      <section class="team py-5" id="team">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2 class="fs-6 text-uppercase">team</h2>
@@ -1277,8 +1291,11 @@
       async
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script> -->
 
     <script>
+      new PureCounter();
+
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         loop: true,
